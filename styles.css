@@ -1,0 +1,59 @@
+/* styles.css */
+
+/* Base Layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #fdf6e3, #e8f5e9);
+  color: #2e3d49;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main Container */
+.container {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #ffffffcc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 0.5rem;
+  color: #00695c;
+}
+
+/* Clock and Date Display */
+.date-display, .clock-display {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Earth Day Highlight */
+.earth-day {
+  color: #bf360c;
+  font-weight: bold;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #ff7043;
+  }
+  to {
+    text-shadow: 0 0 15px #ff8a65;
+  }
+}
+
+/* Subtext */
+small {
+  font-size: 0.9rem;
+  color: #555;
+}
